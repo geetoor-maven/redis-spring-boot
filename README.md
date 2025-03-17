@@ -29,9 +29,13 @@ kemudian jangan lupa untuk insert data produk yang telah saya siapkan di folder
 ### Waktu Response Jika Tidak Menggunakan Redis Cache
 Berikut adalah waktu response ketika saya melakukan request jika tidak menggunakan redis cache
 
+- Mengambil data product
 ![no-cache.png](src/main/resources/img/no-cache.png)
+Terlihat waktu pengambilan data selama 219 ms ( gimana kalau code nya udah kompleks ? akan lama lagi pastinya 🧐)
 
-terlihat waktu response 219 ms
+- Membuat data product
+![no-cache.png](src/main/resources/img/no-cache-1.png)
+Terlihat waktu pembuatan data selama 216 ms ( gimana kalau ada banyak pengecekan ? akan lama lagi pastinya 🧐)
 
 ### Waktu Response Jika Menggunakan Redis Cache
 Berikut adalah waktu response ketika saya melakukan request jika menggunakan redis cache
