@@ -23,8 +23,8 @@ kemudian jangan lupa untuk insert data produk yang telah saya siapkan di folder
 `resources/sql/insert_data.sql`
 
 ## Branching
-- no-cache : branch yang tidak mengimlementasikan redis cache
-- with-cache : branch yang sudah mengimplementasikan redis cache
+- [no-cache](https://github.com/geetoor-maven/redis-spring-boot/tree/no-cache) : branch yang tidak mengimlementasikan redis cache
+- [with-cache](https://github.com/geetoor-maven/redis-spring-boot/tree/with-cache) : branch yang sudah mengimplementasikan redis cache
 
 ### Waktu Response Jika Tidak Menggunakan Redis Cache
 Berikut adalah waktu response ketika saya melakukan request jika tidak menggunakan redis cache
@@ -39,3 +39,21 @@ Terlihat waktu pembuatan data selama 216 ms ( gimana kalau ada banyak pengecekan
 
 ### Waktu Response Jika Menggunakan Redis Cache
 Berikut adalah waktu response ketika saya melakukan request jika menggunakan redis cache
+
+- Mengambil data product
+![no-cache.png](src/main/resources/img/with-cache.png)
+Terlihat waktu pemgambilan data selama 58 ms ( sangat jauh jika kita tidak mengimplementasikan cache ya )
+
+- Membuat data product
+  ![no-cache.png](src/main/resources/img/with-cache-1.png)
+Dari waktu response 216 ms, turun ke 12 ms. 
+
+Btw untuk keseluruhan penjelasannya bisa di baca di artikel saya ya.
+[CodeDadakan](https://www.codedadakan.com/2025/03/perbandingan-performa-redis-cache-spring-boot.html)
+
+#### Authors Code
+- [@aguskurniawan](https://www.facebook.com/gozhort)
+
+Jika ada pertanyaan, mari diskusikan di telegram : `@geetoor`
+
+`bagikan jika ini bermanfaat`
