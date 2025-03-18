@@ -42,7 +42,7 @@ Berikut adalah waktu response ketika saya melakukan request jika menggunakan red
 
 - Mengambil data product
 ![no-cache.png](src/main/resources/img/with-cache.png)
-Terlihat waktu pemgambilan data selama 58 ms ( sangat jauh jika kita tidak mengimplementasikan cache ya )
+Terlihat waktu pemgambilan data selama 58 ms ( sangat jauh jika kita mengimplementasikan cache ya )
 
 - Membuat data product
   ![no-cache.png](src/main/resources/img/with-cache-1.png)
